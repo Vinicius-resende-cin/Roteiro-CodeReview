@@ -6,6 +6,9 @@ public class ShoppingCart {
 
     void addItem(int price) {
         this.subtotal += price;
+        if (price > 50) {
+            this.shipping += 5;
+        }
     }
 
     int calculateTotal() {
