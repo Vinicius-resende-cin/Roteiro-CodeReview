@@ -9,7 +9,8 @@ public class ShoppingCart {
     }
 
     int calculateTotal() {
-        return this.subtotal + this.shipping;
+        int discountedShipping = (int)(this.shipping * 0.9);
+        return this.subtotal + discountedShipping;
     }
 
 }
